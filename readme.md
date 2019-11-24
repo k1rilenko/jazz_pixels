@@ -1,4 +1,4 @@
-# Imedia Project Template Frontend
+# Project Template Frontend
 **Шаблон проекта для быстрого старта**
 
 
