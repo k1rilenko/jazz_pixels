@@ -1,0 +1,29 @@
+mixin slider()
+	+b.slider&attributes(attributes)
+		.container
+			+e.content
+				+e.slide
+					for slide in getData('slider')
+						+e.item
+							+e.information
+								if (slide.category)
+									+e('p').cat
+										+e('svg').icon.icon
+											use(xlink:href="#{slide.icon}")
+										+e('span').name= slide.category
+								if slide.ui
+									+e('p').title._ui
+										+e('span').title-value._number 16
+										+e('span').title-value= slide.title
+								else
+									+e('p').title= slide.title
+								+e.link-wrapper
+									+e('a')(href="#{slide.href}").link= slide.link
+
+							+e.image
+								if slide.no_opacity
+									+e.image-container._no-opacity
+										+e('img')(src="#{slide.image}" alt="#{slide.title}").img
+								else
+									+e.image-container
+										+e('img')(src="#{slide.image}" alt="#{slide.title}").img

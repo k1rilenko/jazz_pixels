@@ -1,0 +1,30 @@
+#map-block
+	width 100%
+	height calc(var(--vh, 1vh) * 100 - 47px)
+.map
+	display block
+	position relative
+	&__button
+		position absolute
+		bottom 2.4rem
+		width 42px
+		height 42px
+		border-radius 50%
+		background-color $black
+		box-shadow 0 4px 6px rgba(0, 0, 0, .25)
+		&_events
+			left 2.4rem
+			.map__icon
+				width 16px
+				height 15px
+		&_location
+			right 2.4rem
+			.map__icon
+				width 13px
+				height 18px
+	&__icon
+		position absolute
+		left 50%
+		top 50%
+		transform translate(-50%, -50%)
+

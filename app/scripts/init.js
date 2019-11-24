@@ -1,4 +1,9 @@
 app.common.init();
+app.map.reloadBaseVh();
 app.sliderServices.init();
-app.sliderServices2.init();
-app.fancyboxExample.init();
+app.map.mapLoading();
+app.feed.openItem();
+app.nav.eventStyle();
+app.map.eventListControl();
+app.map.scrollEventList();
+app.map.scrollEventListResize();

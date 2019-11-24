@@ -1,0 +1,32 @@
+mixin feed_map()
+	+b.feed._map&attributes(attributes)
+		+e.text-block
+			+e('h1').title.title Amsterdam
+			+e('p').subtitle Netherlands
+		+e.list-wrapper
+			+e('ul').list
+				for feed in getData('feed_map')
+					+e('li')(class="#{'item_' + feed.type}")
+						+e.wrapper
+							+e('button').button.button.book-button
+								+e('svg').icon.icon
+									use(xlink:href="#bookmark")
+							+e.container
+								if feed.recomends
+									+e('p').recomends
+										+e('span').recomends-org= feed.recomends
+										|  recommends an event
+								if feed.bookmark === 'true'
+									+e('button').button._cancel.button
+										+e('svg').icon.icon
+											use(xlink:href="#bookmark_active")
+								if feed.new === 'true'
+									+e('span').new-marker
+								+e.content
+									+e.image-block
+										+e.image-container
+											+e('img')(src="#{feed.image}" alt="alt_text")
+									+e.value
+										+e('h2').name
+											+e('a')(href="#test").name-link= feed.title
+										+e('h3').details= feed.details

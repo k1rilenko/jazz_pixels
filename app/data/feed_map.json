@@ -1,0 +1,34 @@
+[
+	{
+		"type": "event",
+		"bookmark": "false",
+		"new": "true",
+		"title": "King or queen of the circle 2018",
+		"details": "Houston, United States 13 October",
+		"image": "./assets/images/feed_4.jpg"
+	},
+	{
+		"type": "event",
+		"bookmark": "true",
+		"new": "false",
+		"title": "Temple rock: 5 year anniversary 2018",
+		"details": "Buenos Aires, Argentina 13 October",
+		"image": "./assets/images/feed_4.jpg"
+	},
+	{
+		"type": "event",
+		"bookmark": "false",
+		"new": "false",
+		"title": "Soul Rockerz 20",
+		"details": "Buenos Aires, Argentina 13 October",
+		"image": "./assets/images/feed_8.jpg"
+	},
+	{
+		"type": "event",
+		"bookmark": "false",
+		"new": "false",
+		"title": "Rockland's 10 year hip-hop showcase",
+		"details": "Buenos Aires, Argentina 13 October",
+		"image": "./assets/images/feed_9.jpg"
+	}
+]

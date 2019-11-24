@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Feed",
+		"href": "./index.html",
+		"icon": "#feeds",
+		"active": "true"
+	},
+	{
+		"name": "Events",
+		"href": "#",
+		"icon": "#events_without",
+		"active": "false",
+		"data_count": "289"
+	},
+	{
+		"name": "Search",
+		"href": "#",
+		"icon": "#search",
+		"active": "false"
+	},
+	{
+		"name": "Profile",
+		"href": "#",
+		"icon": "#profile",
+		"active": "false"
+	}
+]

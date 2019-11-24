@@ -56,17 +56,20 @@ template
 // 3. Remove highlite on mobile devices.
 // 4. Set default cursor.
 html
-	font-family sans-serif                          // 1
+	font-family 'sf', sans-serif                          // 1
 	-ms-text-size-adjust 100%                       // 2
 	-webkit-text-size-adjust 100%                   // 2
 	-webkit-tap-highlight-color rgba(0, 0, 0, 0)    // 3
 	-webkit-focus-ring-color rgba(255, 255, 255, 0) // 3
 	cursor default                                  // 4
+	font-size 62.5%
 
 // Set 100% line-height
 body
-	font-size 100%
+	font-size 1.6rem
 	line-height 1
+	min-width 320px
+	color $w
 	-moz-osx-font-smoothing grayscale
 	-webkit-font-smoothing antialiased
 
@@ -76,6 +79,7 @@ body
 // Remove the gray background color from active links in IE 10.
 a
 	background transparent
+	text-decoration: none
 
 // Improve readability when focused and also mouse hovered in all browsers.
 *:focus, *:active, *:hover // @stylint ignore

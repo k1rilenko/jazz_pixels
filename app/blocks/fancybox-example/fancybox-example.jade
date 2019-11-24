@@ -1,7 +1,0 @@
-mixin fancybox-example()
-	+b.fancybox-example&attributes(attributes)
-		for slide in getData('slider')
-			+e.item
-				+e('a').link(href="./assets/images/#{slide[0]}", data-fancybox, data-caption="Caption for single image")
-					+e.image
-						+e('img').icon(src="./assets/images/#{slide[0]}" alt="")

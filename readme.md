@@ -6,7 +6,7 @@
 
 ### Склонируй репозиторий и перейди в папку проекта
 ```
-git clone git@bitbucket.org:imediasolutionsby/project-front-template-jade.git
+git clone git@xxxxx.git
 ```
 
 ### Установи модули

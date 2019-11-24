@@ -1,38 +1,35 @@
 [
-	[
-		"1.png",
-		"Операторская техника"
-	],
-	[
-		"2.jpg",
-		"Театр-студия киноактера"
-	],
-	[
-		"3.jpg",
-		"Натурная площадка"
-	],
-	[
-		"4.jpg",
-		"Производственный комплекс «Автобаза»"
-	],
-	[
-		"5.jpg",
-		"Производственный комплекс «Кинопост»"
-	],
-	[
-		"6.jpg",
-		"Производственный комплекс «Тонстудия»"
-	],
-	[
-		"1.png",
-		"Натурная площадка"
-	],
-	[
-		"2.jpg",
-		"Производственный комплекс «Автобаза»"
-	],
-	[
-		"3.jpg",
-		"Производственный комплекс «Кинопост»"
-	]
+	{
+		"title": " new events",
+		"link": "Open map",
+		"href": "./map.html",
+		"image": "./assets/images/slide_1.jpg",
+		"no_opacity": "true",
+		"ui": "true"
+	},
+	{
+		"title": "Temple rock",
+		"link": "Show details",
+		"href": "#",
+		"category": "Hottest",
+		"icon": "#hottest",
+		"image": "./assets/images/slide_2.jpg"
+	},
+	{
+		"title": "Drop the beat 3",
+		"link": "Show details",
+		"href": "#",
+		"category": "Nearest",
+		"icon": "#nearest",
+		"image": "./assets/images/slide_3.jpg"
+	},
+	{
+		"title": "Minsk – Vilnius",
+		"link": "Show tour",
+		"href": "#",
+		"category": "Tour",
+		"icon": "#tour",
+		"image": "./assets/images/slide_1.jpg",
+		"no_opacity": "true"
+	}
 ]

@@ -1,0 +1,59 @@
+[
+	{
+		"type": "music",
+		"bookmark": "true",
+		"new": "false",
+		"title": "Surreal soulja 2",
+		"details": "Cashcurt",
+		"image": "./assets/images/feed_1.jpg"
+	},
+	{
+		"type": "music",
+		"bookmark": "true",
+		"new": "false",
+		"title": "645AR - Workin ft. 10kDug...",
+		"details": "Beez Exclusivez",
+		"image": "./assets/images/feed_2.jpg"
+	},
+	{
+		"type": "video",
+		"bookmark": "false",
+		"new": "false",
+		"title": "Final battle: Issei VS Hong 10 Red Bull BC One..",
+		"details": "48:23",
+		"image": "./assets/images/feed_3.jpg"
+	},
+	{
+		"type": "event",
+		"bookmark": "true",
+		"new": "false",
+		"title": "King or queen of the circle 2018",
+		"details": "Houston, United States 13 October",
+		"recomends": "Bboy Event",
+		"image": "./assets/images/feed_4.jpg"
+	},
+	{
+		"type": "music",
+		"bookmark": "false",
+		"new": "false",
+		"title": "kai$oundz & Lil Gucci Le...",
+		"details": "kai$oundz",
+		"image": "./assets/images/feed_5.jpg"
+	},
+	{
+		"type": "music",
+		"bookmark": "false",
+		"new": "false",
+		"title": "Surreal soulja 2",
+		"details": "Cashcurt",
+		"image": "./assets/images/feed_1.jpg"
+	},
+	{
+		"type": "video",
+		"bookmark": "false",
+		"new": "false",
+		"title": "Final battle: Issei VS Hong 10 Red Bull BC One..",
+		"details": "48:23",
+		"image": "./assets/images/feed_7.jpg"
+	}
+]

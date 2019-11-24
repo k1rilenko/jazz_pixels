@@ -1,0 +1,28 @@
+mixin feed()
+	+b.feed&attributes(attributes)
+		.container
+			+e('h1').title.title Feed
+			+e('ul').list
+				for feed in getData('feed')
+					+e('li')(class="#{'item_' + feed.type}")
+						+e.wrapper
+							+e('button').button.button.book-button
+								+e('svg').icon.icon
+									use(xlink:href="#bookmark")
+							+e.container
+								if feed.recomends
+									+e('p').recomends
+										+e('span').recomends-org= feed.recomends
+										|  recommends an event
+								if feed.bookmark === 'true'
+									+e('button').button._cancel.button
+										+e('svg').icon.icon
+											use(xlink:href="#bookmark_active")
+								+e.content
+									+e.image-block
+										+e.image-container
+											+e('img')(src="#{feed.image}" alt="alt-text")
+									+e.value
+										+e('h2').name
+											+e('a')(href="#test").name-link= feed.title
+										+e('h3').details= feed.details

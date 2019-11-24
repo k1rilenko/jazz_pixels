@@ -1,10 +1,10 @@
 extends /blocks/layout-default/layout-default
-include /blocks/slider/slider
-include /blocks/feed/feed
 include /blocks/nav/nav
+include /blocks/map/map
+include /blocks/feed_map/feed_map
 
 block head
-	- var pageTitle = 'Jazz Feed';
+	- var pageTitle = 'Jazz Map';
 
 block content
 	svg.hidden(width='0', height='0')
@@ -36,6 +36,8 @@ block content
 			path(fill-rule='evenodd', clip-rule='evenodd', d='M11 11.473C11 10.108 12.12 9 13.5 9s2.5 1.108 2.5 2.473C16 13.293 13.5 16 13.5 16S11 13.293 11 11.473z', fill='#FF781C')
 			path(d='M7.006 2h6.497a2.5 2.5 0 0 1 0 5H5.006a4 4 0 0 0 0 8h3.5', stroke='#FF781C', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
 			circle(cx='2', cy='2', r='2', fill='#FF781C')
-	+slider
-	+feed
-	+nav(true)
+	.screen
+		+map
+		+nav
+		+feed_map
+

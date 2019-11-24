@@ -1,0 +1,19 @@
+mixin nav(icon)
+	+b('nav').nav&attributes(attributes)
+		.container
+			+e('ul').list
+				for item in getData('nav')
+					+e('li')(class="#{item.active === 'true' ?'item_active' :'item'}")
+						+e('a').link(href="#{item.href}")
+							if icon === true
+								+e('svg')(class="#{ 'icon_' + item.name.toLowerCase()}")
+									use(xlink:href="#{item.icon}")
+								if item.data_count
+									+e('span').events.events= item.data_count
+							else
+								+e('span').title= item.name
+								if item.data_count
+									+e('span').events.events.events_text= item.data_count
+
+
+

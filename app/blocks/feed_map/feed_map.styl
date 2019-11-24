@@ -1,0 +1,40 @@
+.screen
+	.feed_map
+		transform translateX(-100%)
+		background-color transparent
+		transition transform .3s
+.feed_map
+	display block
+	position absolute
+	top 0
+	width 100%
+	.feed
+		&__title
+			padding 0
+			border-bottom 0
+			margin-bottom 1.1rem
+		&__list
+			position relative
+			background-color $bgd
+			border-top-left-radius 13px
+			border-top-right-radius 13px
+			overflow-x hidden
+			overflow-y scroll
+			&-wrapper
+				overflow hidden
+		&__text-block
+			position relative
+			padding 4rem 0 3.3rem 2.4rem
+			&:before
+				content ''
+				position absolute
+				width 32px
+				height 3px
+				border-radius 5px
+				background-color $orange
+				bottom 8px
+				left calc(50% - 16px)
+		&__subtitle
+			font-size 1.4rem
+			line-height 1.6rem
+			color $grey

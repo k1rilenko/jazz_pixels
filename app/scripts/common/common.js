@@ -1,3 +1,5 @@
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
 app.common = {
 	name: 'common',
 	description: 'application support functions',
@@ -5,6 +7,14 @@ app.common = {
 		this.initScript('svg4everybody.min', 'svg4everybody', () => {
 			svg4everybody();
 		});
+		if (window.NodeList && !NodeList.prototype.forEach) {
+			NodeList.prototype.forEach = function (callback, thisArg) {
+				thisArg = thisArg || window;
+				for (var i = 0; i < this.length; i++) {
+					callback.call(thisArg, this[i], i, this);
+				}
+			};
+		}
 	},
 	addScriptFile(nameFile, callback) {
 		const body = document.getElementsByTagName('body')[0];

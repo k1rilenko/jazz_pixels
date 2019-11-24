@@ -1,0 +1,10 @@
+mixin map()
+	+b.map&attributes(attributes)
+		#map-block
+		+e('button').button._events.button
+			+e('svg').icon
+					use(xlink:href="#map")
+			+e('i').events.events._map 28
+		+e('button').button._location.button
+			+e('svg').icon
+					use(xlink:href="#nearest")

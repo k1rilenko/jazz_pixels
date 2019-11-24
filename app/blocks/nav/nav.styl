@@ -1,0 +1,62 @@
+.nav
+	display block
+	background-color $black
+	&__icon
+		fill #505050
+		transition .3s
+		&:hover
+			fill $orange
+		&_feed
+			width 20px
+			height 22px
+		&_events
+			width 23px
+			height 26px
+		&_search
+			width 29px
+			height 22px
+		&_profile
+			width 27px
+			height 26px
+	&__list
+		display flex
+		align-items center
+	&__link
+		display inline-block
+		padding 1.1rem 0
+		position relative
+		width 8rem
+		text-align center
+		&:hover
+			.nav__title
+				&:before
+					transform translateX(0)
+	&__title
+		position relative
+		display inline-block
+		padding 5px 0
+		font-family $cp
+		font-size 1rem
+		line-height 1.2rem
+		color #505050
+		font-weight 700
+		overflow hidden
+		&:before
+			content ''
+			position absolute
+			width 100%
+			height 1px
+			transform translateX(-110%)
+			transition transform .2s
+			background-color $w
+			bottom 0
+			left 0
+	&__item
+		width 25%
+		text-align center
+		&_active
+			.nav__title
+				color $orange
+			.nav__icon
+				fill $orange
+

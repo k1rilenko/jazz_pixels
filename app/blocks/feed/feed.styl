@@ -1,0 +1,125 @@
+.feed
+	display block
+	background-color $bgd
+	&__title
+		padding 3.9rem 0 2.5rem 2.3rem
+		border-bottom 2px solid $brown
+	&__wrapper
+		position relative
+		display flex
+		transform translateX(-128px)
+		transition transform .2s
+	&__content
+		display flex
+		width 100%
+		padding-left 1.2rem
+	&__container
+		min-width 100%
+		flex-grow 1
+		padding 2.4rem 1.2rem 2.4rem 0
+		position relative
+		width 100%
+	&__icon
+		width 9px
+		height 10px
+	&__button
+		&_cancel
+			padding 10px
+			line-height 0
+			position absolute
+			right 0
+			top 14px
+	&__item
+		border-bottom 1px solid $brown
+		&:last-child
+			border-bottom 1px solid transparent
+		&_active
+			.feed__wrapper
+				transform translateX(0)
+		&_music
+			.feed__name
+				white-space nowrap
+				overflow hidden
+				text-overflow ellipsis
+				margin-bottom 4px
+			.feed__details
+				white-space nowrap
+				overflow hidden
+				text-overflow ellipsis
+			.feed__value
+				transform translateY(50%)
+		&_video
+			.feed__name
+				margin-bottom 8px
+			.feed__container
+				padding 2.4rem 1.2rem 4.4rem 0
+			.feed__value
+				bottom 1.4rem
+		&_event
+			.feed__name
+				font-family $un
+				font-size 2.2rem
+				line-height 2.6rem
+			.feed__value
+				margin-top 1.7rem
+				display flex
+				flex-direction column
+				height 132px
+				justify-content space-between
+	&__list
+		overflow-x hidden
+	&__image-container
+		position relative
+		opacity .4
+		border-radius 8px
+		overflow hidden
+	&__value
+		position absolute
+		flex-grow 1
+		left 7.2rem
+		width calc(100% - 7.2rem)
+	&__name
+		&-link
+			color $w
+			font-size 1.8rem
+			line-height 2.1rem
+			font-weight 900
+			padding-right 2rem
+	&__details
+		width 70%
+		font-size 1.4rem
+		line-height 1.6rem
+		color $grey
+		font-weight 600
+	&__recomends
+		font-size 1.4rem
+		line-height 1.6rem
+		margin-bottom 2.4rem
+		padding-left 1.2rem
+		&-org
+			color $orange
+	&__item_active&__item_music &
+		&__container
+			background-color #1C1C1C
+		&__value
+			&:before
+			&:after
+				position absolute
+				content ''
+				width 100%
+				height 4rem
+				background-image url(../images/background_music.png)
+				left 18px
+			&:before
+				top -50%
+			&:after
+				top 20px
+				transform rotate(180deg)
+	&__new-marker
+		position absolute
+		width 11px
+		height 11px
+		border-radius 50%
+		background linear-gradient(0deg, #2459E2, #2459E2), #2E61E5
+		box-shadow 0px 4px 6px rgba(0, 0, 0, .25)
+		right 1.2rem
